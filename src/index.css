@@ -1,0 +1,17 @@
+/* 
+  Import Tailwind's base styles (resets, normalize.css, etc.) 
+  This sets up a consistent baseline across browsers.
+*/
+@tailwind base;
+
+/* 
+  Import component classes like buttons, cards, forms, etc.
+  These are pre-built classes you can use and extend.
+*/
+@tailwind components;
+
+/* 
+  Import utility classes (e.g., p-4, bg-blue-500, flex, etc.)
+  These are the core of Tailwind’s utility-first approach.
+*/
+@tailwind utilities;

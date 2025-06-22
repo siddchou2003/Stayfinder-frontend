@@ -1,0 +1,52 @@
+/* Center content and limit max width for the root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Base styling for logos */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter; /* Hint to browser: this element’s filter may change */
+  transition: filter 300ms; /* Smooth transition for hover effect */
+}
+
+/* Blue glow on hover for all logos */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* Specific glow effect for React logo */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spin animation keyframes for the logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply spin animation only when reduced motion is not preferred */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Padding for card-like elements */
+.card {
+  padding: 2em;
+}
+
+/* Subtle color for instructional/help text */
+.read-the-docs {
+  color: #888;
+}
